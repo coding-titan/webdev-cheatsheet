@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Moving Blocks</title>
+</head>
+
+<body>
+    <h1>Moving Blocks</h1>
+    <h2>Samples of different behaviors for divs</h2>
+
+    <div id="position">
+        <h2>Position</h2>
+        <p>There are 4 kinds of positions a div can have.</p>
+        <p>Think about positioning as how to <em>move</em> or <em>place</em> elements on the webpage.</p>
+
+        <div class="block">
+            <h3>Unmoved</h3>
+            <p>This block has not had its position altered.</p>
+        </div>
+        
+        <div class="block" id="relative">
+            <h3>Relative</h3>
+            <p>These are shifted in relation to their original position. Confusingly enough, this is written in the opposite; if I want to move it 10px down, I write <span class="code">'10px top'</span>. The idea is that you move it a certain distance <em>from</em> something. This means that if you want something to moved upwards 10px, you would write <span id="code">'bottom: 0px'</span>.</p>
+        </div>
+
+        <div class="block" id="absolute">
+            <h3>Absolute</h3>
+            <p>These are shifted in relation to their parent element. You sort of "force" it to move in a certain way. It stays that way even if you scroll, which is a difference from "fixed".</p>
+        </div>
+
+        <div class="block" id="fixed">
+            <h3>Fixed</h3>
+            <p>These are fixed on the page - like a "chat with us here" thing on a corporate website, or a navigation menu on the top of the page. So this is positoned in relation to the viewport (what the user sees) rather than some other element.</p>
+        </div>
+
+        <div class="block" id="sticky">
+            <h3>Sticky</h3>
+            <p>These wait for the user to scroll to them, and then sticks to the page. You need to specify an offset (like <span class="code">'top 0px'</span> for the top of the screen) so it knows where to stick it to. If you have a navbar, for example, you'd probably want to offset the stick with the height of the navbar.</p>
+        </div>
+
+    </div>
+
+    <div id="display">
+        <h2>Display</h2>
+        <p>These are the display properties we have to choose from.</p>
+        <p>Think about this more like how you instruct the browser to deal with the placement of the content, not least when different sized browsers come into play.</p>
+
+        <div class="block" id="inline">
+            <h3>Inline</h3>
+            <p>These are very timid and shy, only taking up as much place as their content demands, and moves out of the way when another elements needs it to. Think of how it would work in some settings of pictures in Word.</p>
+        </div>
+
+        <div class="block" id="block">
+            <h3>Block</h3>
+            <p>These are very decisive and create a whole new row just for themselves. They can have their height & width adjusted, and will take up the full width of their container.</p>
+        </div>
+
+        <div class="block" id="inline-block">
+            <h3>Inline-block</h3>
+            <p>These are a middle ground. They are like inline in that they can appear next to other elements and don't create a whole new row for themselves, but like blocks in that they can have a set width & height that they occupy.</p>
+        </div>
+    </div>
+
+    <footer>
+        Made with love & grit by Sebs Assorted Meats And Websites.
+    </footer>
+
+</body>
+
