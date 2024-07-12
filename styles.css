@@ -42,7 +42,7 @@ h2 {
     text-align: left;
     padding: 2px;
     color: #283618;
-    margin: 32px;
+    margin: 42px;
 }
 
 h3 {
@@ -51,7 +51,7 @@ h3 {
     text-align: left;
     padding: 10px;
     color: #283618;
-    margin: 32px;
+    margin: 20px 32px;
 }
 
 p {
@@ -71,7 +71,7 @@ p {
 }
 
 .block p {
-    margin: 0px 32px;
+    margin: 20px 32px;
 }
 
 .block h3 {
@@ -81,33 +81,6 @@ p {
 
 #transparent {
     opacity: 0.5;
-}
-
-#position p {
-    margin-bottom: 45px;
-}
-
-#fixed::-webkit-scrollbar {
-    display: none;
-}
-
-#sticky {
-    position: sticky;
-    top: 50px;
-}
-
-#block {
-    display: inline-block;
-}
-
-#inline {
-    display: inline-block;
-    background-color: #DDA15E;
-}
-
-#inline-block {
-    display: inline-block;
-    margin-bottom: 25px;
 }
 
 #code {
