@@ -59,7 +59,7 @@ p {
     text-align: left;
     padding: 10px;
     color: #283618;
-    margin: 20px 26px;
+    margin: 5px 26px;
 }
 
 .block {
@@ -71,12 +71,12 @@ p {
 }
 
 .block p {
-    margin: 10px 32px;
+    margin: 0px 32px;
 }
 
 .block h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 #transparent {
@@ -85,11 +85,6 @@ p {
 
 #position p {
     margin-bottom: 45px;
-}
-
-#relative {
-    position: relative;
-    bottom: 30px;
 }
 
 #fixed::-webkit-scrollbar {
