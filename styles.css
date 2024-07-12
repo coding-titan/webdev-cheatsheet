@@ -120,22 +120,36 @@ p {
     font-weight: bold;
 }
 
-#poppins p {
+#poppins p,
+#poppins h2,
+#poppins a {
     font-family: Poppins, sans-serif;
+    text-decoration: none;
+    color: inherit;
 }
 
-#lora h2 {
+#lora p,
+#lora h2,
+#lora a {
     font-family: Lora, "serif";
+    text-decoration: none;
+    color: inherit;
 }
 
 #noto-sans p,
-#noto-sans h2 {
+#noto-sans h2,
+#noto-sans a {
     font-family: "Noto Sans";
+    text-decoration: none;
+    color: inherit;
 }
 
 #noto-serif p,
-#noto-serif h2 {
+#noto-serif h2,
+#noto-serif a {
     font-family: "Noto Serif";
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {
