@@ -42,7 +42,7 @@ h2 {
     text-align: left;
     padding: 2px;
     color: #283618;
-    margin: 42px;
+    margin: 32px;
 }
 
 h3 {
@@ -77,6 +77,24 @@ p {
 .block h3 {
     margin-top: 15px;
     margin-bottom: 0px;
+}
+
+table, th, td {
+    font-family: Lora, serif;
+    border: 2px solid #283618;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    display: block;
+    border: 0px;
+    margin: 10px 30px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #DDA15E;
 }
 
 #transparent {
