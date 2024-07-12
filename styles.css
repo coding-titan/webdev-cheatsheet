@@ -1,8 +1,139 @@
+/* Style swatch: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    background-color: #fefae0;
+}
+
+nav {
+    background-color: #DDA15E;
+    padding: 30px;
+    font-family: Poppins, helvetica, serif;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: #283618;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 40px;
+}
+
 h1 {
-    
+    font-family: Poppins, arial, sans-serif;
+    font-size: 400%;
+    text-align: left;
+    padding: 10px;
+    color: black;
+    margin: 25px;
+}
+
+h2 {
+    font-family: Poppins, arial, sans-serif;
+    font-size: 300%;
+    text-align: left;
+    padding: 2px;
+    color: #283618;
+    margin: 32px;
+}
+
+h3 {
+    font-family: Poppins, arial, sans-serif;
+    font-size: 150%;
+    text-align: left;
+    padding: 10px;
+    color: #283618;
+    margin: 32px;
+}
+
+p {
+    font-family: Lora, "helvetica", serif;
+    text-align: left;
+    padding: 10px;
+    color: #283618;
+    margin: 20px 26px;
+}
+
+.block {
+    background-color: #DDA15E;
+    border-radius: 15px;
+    margin: 10px 32px;
+    width: 400px;
+    display: inline-block;
+}
+
+.block p {
+    margin: 10px 32px;
+}
+
+.block h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#transparent {
+    opacity: 0.5;
+}
+
+#position p {
+    margin-bottom: 45px;
+}
+
+#relative {
+    position: relative;
+    bottom: 30px;
+}
+
+#fixed::-webkit-scrollbar {
+    display: none;
+}
+
+#sticky {
+    position: sticky;
+    top: 50px;
+}
+
+#block {
+    display: inline-block;
+}
+
+#inline {
+    display: inline-block;
+    background-color: #DDA15E;
+}
+
+#inline-block {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+#code {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#poppins p {
+    font-family: Poppins, sans-serif;
+}
+
+#lora h2 {
+    font-family: Lora, "serif";
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: Lora, "helvetica", serif;
+    padding: 5px;
+    text-align: right;
+    color: #283618;
+    top: 20px;
 }

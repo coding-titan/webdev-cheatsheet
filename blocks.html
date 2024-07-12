@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Moving Blocks</title>
+    <title>Moving blocks</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -11,22 +18,18 @@
         <a href="fonts.html">Fonts</a>
     </nav>
 
-    <h1>Moving Blocks</h1>
-    <h2>Samples of different behaviors for divs</h2>
+    <h1>Information on how to move blocks around.</h1>
+
 
     <div id="position">
         <h2>Position</h2>
         <p>There are 4 kinds of positions a div can have.</p>
         <p>Think about positioning as how to <em>move</em> or <em>place</em> elements on the webpage.</p>
 
-        <div class="block">
-            <h3>Unmoved</h3>
-            <p>This block has not had its position altered.</p>
-        </div>
-        
         <div class="block" id="relative">
             <h3>Relative</h3>
             <p>These are shifted in relation to their original position. Confusingly enough, this is written in the opposite; if I want to move it 10px down, I write <span class="code">'10px top'</span>. The idea is that you move it a certain distance <em>from</em> something. This means that if you want something to moved upwards 10px, you would write <span id="code">'bottom: 0px'</span>.</p>
+            <p>This has been moved 30px upwards in this manner.</p>
         </div>
 
         <div class="block" id="absolute">
@@ -51,14 +54,14 @@
         <p>These are the display properties we have to choose from.</p>
         <p>Think about this more like how you instruct the browser to deal with the placement of the content, not least when different sized browsers come into play.</p>
 
-        <div class="block" id="inline">
-            <h3>Inline</h3>
-            <p>These are very timid and shy, only taking up as much place as their content demands, and moves out of the way when another elements needs it to. Think of how it would work in some settings of pictures in Word.</p>
-        </div>
-
         <div class="block" id="block">
             <h3>Block</h3>
             <p>These are very decisive and create a whole new row just for themselves. They can have their height & width adjusted, and will take up the full width of their container.</p>
+        </div>
+
+        <div class="block" id="inline">
+            <h3>Inline</h3>
+            <p>These are very timid and shy, only taking up as much place as their content demands, and moves out of the way when another elements needs it to. Think of how it would work in some settings of pictures in Word.</p>
         </div>
 
         <div class="block" id="inline-block">
@@ -68,7 +71,7 @@
     </div>
 
     <footer>
-        Made with love & grit by Sebs Assorted Meats And Websites.
+        Made with love & grit by Seb's Assorted Meats And Websites.
     </footer>
 
 </body>
