@@ -62,6 +62,11 @@ p {
     margin: 5px 26px;
 }
 
+.container {
+    display: block;
+    max-width: 1000px;
+}
+
 .block {
     background-color: #DDA15E;
     border-radius: 15px;
