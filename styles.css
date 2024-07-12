@@ -27,6 +27,14 @@ nav a {
     padding: 10px 40px;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    opacity: 0.5;
+}
+
 h1 {
     font-family: Poppins, arial, sans-serif;
     font-size: 400%;
