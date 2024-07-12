@@ -157,6 +157,19 @@ footer {
     font-family: Lora, "helvetica", serif;
     padding: 5px;
     text-align: right;
+    line-height: 2.0;
     color: #283618;
     top: 20px;
+}
+
+footer a {
+    color: #BC6C25;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+footer a:visited {
+    color:#DD5F70;
 }
