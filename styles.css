@@ -17,8 +17,9 @@ nav {
     font-weight: bold;
     text-align: center;
     color: #283618;
-    display: flex;
-    justify-content: center;
+    display: flexbox;
+    width: 100%;
+    z-index: 1;
 }
 
 nav a {
@@ -62,7 +63,7 @@ h3 {
     margin: 20px 32px;
 }
 
-p {
+p, li, ul, ol {
     font-family: Lora, "helvetica", serif;
     text-align: left;
     padding: 10px;
