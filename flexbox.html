@@ -31,6 +31,19 @@
         
         <div id="flex-container-properties">
             <h2>Flex Container</h2>
+
+            <div class="block">
+                <span class="material-symbols-outlined box-symbol">
+                    move_down</span><h3>Flex-wrap</h3>
+                <p>The flex-wrap property specifies if and how the content should wrap if the container grows or shrinks. There are three values we can use:</p>
+
+                <ol>
+                    <li>Nowrap (default): stops elements from wrapping.</li>
+                    <li>Wrap: causes items to move to a new row if needed.</li>
+                    <li>Wrap-reverse: same as wrap, but the order of the items will be reversed, so that they start at the bottom and end at the top.</li>
+                </ol>
+            </div>
+
             <div class="block">
                 <span class="material-symbols-outlined box-symbol">
                     swap_horiz</span><h3>Justify-content</h3>
@@ -64,12 +77,26 @@
             <h2>Flex Item</h2>
             <div class="block">
                 <span class="material-symbols-outlined box-symbol">
-                    zoom_out_map</span><h3>Flex-grow</h3>
-                <p>By default, flex items become smaller to adapt to the size of the container. Flex-grow is used to make them grow as well.</p>
+                    zoom_out_map</span><h3>Flex-grow & -shrink</h3>
+                <p>By default, flex items become smaller to adapt to the size of the container. Flex-shrink is used to set the ratios of this, and flex-grow is used to make them grow as well.</p>
                 
                 <p>We do this using numbers. For example, if I give one flex-item the flex-grow value of 1 and another the flex-grow value of 2, the second item will grow more as the container grows.</p>
 
-                <p>Additionally, if I set a flex-grow value for one element in a container but not the others, only that item will stretch to fit the container. This is because the default value of flex-grow is 0.</p>
+                <p>The default value of flex-grow is 0, and for flex-shrink it is 1. This means that if I add flex-grow to one element but not others only that will grow, whereas if I set one element's flex-shrink to 0 and leave the others, that element will remain the same size while the others shrink.</p>
+            </div>
+
+            <div class="block">
+                <span class="material-symbols-outlined box-symbol">
+                    select_all</span><h3>Flex basis</h3>
+                <p>Used to set the original size of the element, given the exact right dimensions of the parent container. Used as an alternative to setting width and height.</p>
+            </div>
+
+            <div class="block">
+                <span class="material-symbols-outlined box-symbol">
+                    bolt</span><h3>Flex</h3>
+                <p>Using the Flex <em>property</em> (different from the display: flex <em>value</em>), we can set the grow, shrink and basis of a flex item in one line.</p>
+
+                <p>So instead of writing "flex-grow: 1;, flex-shrink: 2;, flex-basis: 50px;", we can write "flex: 1 2 50px;"</p>
             </div>
 
         </div>
