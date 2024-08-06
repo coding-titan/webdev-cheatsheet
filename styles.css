@@ -1,5 +1,3 @@
-/* Style swatch: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
-
 * {
     margin: 0px;
     padding: 0px;
@@ -58,9 +56,10 @@ h3 {
     font-family: Poppins, arial, sans-serif;
     font-size: 150%;
     text-align: left;
-    padding: 10px;
+    padding: 15px;
     color: #283618;
     margin: 20px 32px;
+    display: inline-block;
 }
 
 p, li, ul, ol {
@@ -91,6 +90,11 @@ p, li, ul, ol {
 .block h3 {
     margin-top: 15px;
     margin-bottom: 0px;
+}
+
+.box-symbol {
+    position: relative;
+    top: 3px;
 }
 
 table, th, td {

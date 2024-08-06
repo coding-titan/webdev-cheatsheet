@@ -1,7 +1,5 @@
-Cheatsheet project for Codecademy.
+Cheatsheet for web development.
 
-Set to contain two pages initially:
-
-- The different display properties and position properties.
-
-- A few fonts I think look nice.
+Icons: https://fonts.google.com/icons
+Fonts: H: Poppins, P: Lora
+Colors: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
