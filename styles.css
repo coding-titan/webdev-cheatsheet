@@ -97,6 +97,10 @@ p, li, ul, ol {
     top: 3px;
 }
 
+.green-text {
+    color: #dc7b36c1;
+}
+
 table, th, td {
     font-family: Lora, serif;
     border: 2px solid #283618;
