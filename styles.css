@@ -15,9 +15,10 @@ nav {
     font-weight: normal;
     text-align: center;
     color: #283618;
-    display: flexbox;
     width: 100%;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -72,16 +73,18 @@ p, li, ul, ol {
 }
 
 .container {
-    display: block;
-    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .block {
     background-color: #DDA15E;
     border-radius: 15px;
     margin: 10px 32px;
-    width: 400px;
+    max-width: 600px;
     display: inline-block;
+    flex-shrink: 1;
 }
 
 .block p {

@@ -23,123 +23,122 @@
         <a href="glossary.html">Glossary</a>
     </nav>
 
-    <section class="container">
-        <h1>Responsive positioning of elements.</h1>
-        <p>Flexboxes are a way to organize the elements within a container. If you make an element (like a div) a Flexbox, the items within it (the "flex items") will start behaving according to a set of rules that you define. These rules can be set both for the flex container and the flex items.</p>
+    <h1>Responsive positioning of elements.</h1>
 
-        <p>An element can be both a flexbox and a flex item at the same time. If each part under a header below is a flexbox div, the boxes below the headers might be both flex items (in relation to the header div) and flexboxes (in relation to the content within the boxes).</p>
+    <p>Flexboxes are a way to organize the elements within a container. If you make an element (like a div) a Flexbox, the items within it (the "flex items") will start behaving according to a set of rules that you define. These rules can be set both for the flex container and the flex items.</p>
 
-        <p>If you want to learn more, you could go to <a href="https://www.codecademy.com/learn/learn-css-flexbox-and-grid">Codecademy</a>, or some other website teaching people to code.</p>
+    <p>An element can be both a flexbox and a flex item at the same time. If each part under a header below is a flexbox div, the boxes below the headers might be both flex items (in relation to the header div) and flexboxes (in relation to the content within the boxes).</p>
 
-        <br>
-        
-        <div id="flex-container-properties">
-            <h2>Flex Container</h2>
+    <p>If you want to learn more, you could go to <a href="https://www.codecademy.com/learn/learn-css-flexbox-and-grid">Codecademy</a>, or some other website teaching people to code.</p>
 
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    move_down</span><h3>Flex-wrap</h3>
-                <p>The flex-wrap property specifies if and how the content should wrap if the container grows or shrinks. There are three values we can use:</p>
+    <br>
+    
+    <h2>Flex Container</h2>
+    <div id="flex-container-properties" class="container">
 
-                <ol>
-                    <li>Nowrap (default): stops elements from wrapping.</li>
-                    <li>Wrap: causes items to move to a new row if needed.</li>
-                    <li>Wrap-reverse: same as wrap, but the order of the items will be reversed, so that they start at the bottom and end at the top.</li>
-                </ol>
-            </div>
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                move_down</span><h3>Flex-wrap</h3>
+            <p>The flex-wrap property specifies if and how the content should wrap if the container grows or shrinks. There are three values we can use:</p>
 
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    swap_horiz</span><h3>Justify-content</h3>
-                <p>The Justify-content property is used to align a flex item on the horizontal axis. 5 common values are:</p>
-
-                <ol>
-                    <li>Flex-start: aligns items to the <b>left</b>.</li>
-                    <li>Flex-end: aligns items to the <b>right</b>.</li>
-                    <li>Center: aligns item to the <b>middle</b>.</li>
-                    <li>Space-around: adds an equal amount of <b>space around all items</b>, resulting in a larger amount of whitespace than...</li>
-                    <li>Space-between: adds <b>space between the items</b>, but not around them.</li>
-                </ol>
-            </div>
-
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    swap_vert</span><h3>Align-items</h3>
-                <p>The align-items property is used to align items on the vertical axis. 5 common values are:</p>
-
-                <ol>
-                    <li>Flex-start: aligns items to the <b>top</b> of the container.</li>
-                    <li>Flex-end: aligns items to the <b>bottom</b> of the container.</li>
-                    <li>Center: aligns item to the <b>center</b> of the container.</li>
-                    <li>Baseline: aligns the bottoms of the elements to match each other.</li>
-                    <li>Stretch: stretches items that do not have a set height (or max height) to the top and bottom of the container.</li>
-                </ol>
-            </div>
-
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    unfold_more_double</span><h3>Align-content</h3>
-                <p>This is the same thing as align-items (vertical positioning), but for how rows of content are to be aligned in relation to the container, rather than how the items are to align when resizing. So how these boxes are to be aligned in relation to the page as a whole, instead of how they will behave if I resize the window. Here are a couple of values:</p>
-
-                <ol>
-                    <li>Flex-start: aligns content to the <b>top</b> of the container.</li>
-                    <li>Flex-end: aligns content to the <b>bottom</b> of the container.</li>
-                    <li>Center: aligns content to the <b>center</b> of the container.</li>
-                    <li>Space-between: aligns content with space between the content boxes, but not the outer container.</li>
-                    <li>Space-around: aligns content with space on both sides of the content.</li>
-                    <li>Stretch: stretches content that does not have a set height (or max height) to the top and bottom of the container.</li>
-                </ol>
-            </div>
-
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    shuffle</span><h3>Flex-direction</h3>
-                <p>By default, content will wrap and position itself on the horizontal axis when the viewport size in changed. With flex-direction, you can change that into the vertical axis, and change the floating direction. This is done with:</p>
-                <ol>
-                    <li>Row/row-reverse: aligns content <b>horizontally</b>, starting from the left (row) or the right (row-reverse).</li>
-                    <li>Column/column-reverse: aligns content <b>vertically</b>, starting from the top (column) or the bottom (column-reverse).</li>
-                </ol>
-
-                <p>If you change the flex direction to the vertical axis, that also reverses the flex item properties below.</p>
-            </div>
-
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    bolt</span><h3>Flex-flow</h3>
-                <p>We can combine the flex-direction and flex-wrap into one line of code with flex-flow. We write direction first and wrapping second.</p>
-                <p>So instad of writing "flex-direction: column-reverse; flex-flow: wrap", we just write "flex-flow: column-reverse wrap;".</p>
-            </div>
-
+            <ol>
+                <li>Nowrap (default): stops elements from wrapping.</li>
+                <li>Wrap: causes items to move to a new row if needed.</li>
+                <li>Wrap-reverse: same as wrap, but the order of the items will be reversed, so that they start at the bottom and end at the top.</li>
+            </ol>
         </div>
 
-        <div id="flex-item-properties">
-            <h2>Flex Item</h2>
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    zoom_out_map</span><h3>Flex-grow & -shrink</h3>
-                <p>By default, flex items become smaller along the main axis (horizontal per default) to adapt to the size of the container. Flex-shrink is used to set the ratios of this, and flex-grow is used to make them grow as well.</p>
-                
-                <p>We do this using numbers. For example, if I give one flex-item the flex-grow value of 1 and another the flex-grow value of 2, the second item will grow more as the container grows.</p>
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                swap_horiz</span><h3>Justify-content</h3>
+            <p>The Justify-content property is used to align a flex item on the horizontal axis. 5 common values are:</p>
 
-                <p>The default value of flex-grow is 0, and for flex-shrink it is 1. This means that if I add flex-grow to one element but not others only that will grow, whereas if I set one element's flex-shrink to 0 and leave the others, that element will remain the same size while the others shrink.</p>
-            </div>
-
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    select_all</span><h3>Flex basis</h3>
-                <p>Used to set the original size of the element, given the exact right dimensions of the parent container. Used as an alternative to setting width and height.</p>
-            </div>
-
-            <div class="block">
-                <span class="material-symbols-outlined box-symbol">
-                    bolt</span><h3>Flex</h3>
-                <p>Using the Flex <em>property</em> (different from the display: flex <em>value</em>), we can set the grow, shrink and basis of a flex item in one line.</p>
-
-                <p>So instead of writing "flex-grow: 1;, flex-shrink: 2;, flex-basis: 50px;", we can write "flex: 1 2 50px;"</p>
-            </div>
-
+            <ol>
+                <li>Flex-start: aligns items to the <b>left</b>.</li>
+                <li>Flex-end: aligns items to the <b>right</b>.</li>
+                <li>Center: aligns item to the <b>middle</b>.</li>
+                <li>Space-around: adds an equal amount of <b>space around all items</b>, resulting in a larger amount of whitespace than...</li>
+                <li>Space-between: adds <b>space between the items</b>, but not around them.</li>
+            </ol>
         </div>
 
-    </section>
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                swap_vert</span><h3>Align-items</h3>
+            <p>The align-items property is used to align items on the vertical axis. 5 common values are:</p>
+
+            <ol>
+                <li>Flex-start: aligns items to the <b>top</b> of the container.</li>
+                <li>Flex-end: aligns items to the <b>bottom</b> of the container.</li>
+                <li>Center: aligns item to the <b>center</b> of the container.</li>
+                <li>Baseline: aligns the bottoms of the elements to match each other.</li>
+                <li>Stretch: stretches items that do not have a set height (or max height) to the top and bottom of the container.</li>
+            </ol>
+        </div>
+
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                unfold_more_double</span><h3>Align-content</h3>
+            <p>This is the same thing as align-items (vertical positioning), but for how rows of content are to be aligned in relation to the container, rather than how the items are to align when resizing. So how these boxes are to be aligned in relation to the page as a whole, instead of how they will behave if I resize the window. Here are a couple of values:</p>
+
+            <ol>
+                <li>Flex-start: aligns content to the <b>top</b> of the container.</li>
+                <li>Flex-end: aligns content to the <b>bottom</b> of the container.</li>
+                <li>Center: aligns content to the <b>center</b> of the container.</li>
+                <li>Space-between: aligns content with space between the content boxes, but not the outer container.</li>
+                <li>Space-around: aligns content with space on both sides of the content.</li>
+                <li>Stretch: stretches content that does not have a set height (or max height) to the top and bottom of the container.</li>
+            </ol>
+        </div>
+
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                shuffle</span><h3>Flex-direction</h3>
+            <p>By default, content will wrap and position itself on the horizontal axis when the viewport size in changed. With flex-direction, you can change that into the vertical axis, and change the floating direction. This is done with:</p>
+            <ol>
+                <li>Row/row-reverse: aligns content <b>horizontally</b>, starting from the left (row) or the right (row-reverse).</li>
+                <li>Column/column-reverse: aligns content <b>vertically</b>, starting from the top (column) or the bottom (column-reverse).</li>
+            </ol>
+
+            <p>If you change the flex direction to the vertical axis, that also reverses the flex item properties below.</p>
+        </div>
+
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                bolt</span><h3>Flex-flow</h3>
+            <p>We can combine the flex-direction and flex-wrap into one line of code with flex-flow. We write direction first and wrapping second.</p>
+            <p>So instad of writing "flex-direction: column-reverse; flex-flow: wrap", we just write "flex-flow: column-reverse wrap;".</p>
+        </div>
+
+    </div>
+
+    <div id="flex-item-properties">
+        <h2>Flex Item</h2>
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                zoom_out_map</span><h3>Flex-grow & -shrink</h3>
+            <p>By default, flex items become smaller along the main axis (horizontal per default) to adapt to the size of the container. Flex-shrink is used to set the ratios of this, and flex-grow is used to make them grow as well.</p>
+            
+            <p>We do this using numbers. For example, if I give one flex-item the flex-grow value of 1 and another the flex-grow value of 2, the second item will grow more as the container grows.</p>
+
+            <p>The default value of flex-grow is 0, and for flex-shrink it is 1. This means that if I add flex-grow to one element but not others only that will grow, whereas if I set one element's flex-shrink to 0 and leave the others, that element will remain the same size while the others shrink.</p>
+        </div>
+
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                select_all</span><h3>Flex basis</h3>
+            <p>Used to set the original size of the element, given the exact right dimensions of the parent container. Used as an alternative to setting width and height.</p>
+        </div>
+
+        <div class="block">
+            <span class="material-symbols-outlined box-symbol">
+                bolt</span><h3>Flex</h3>
+            <p>Using the Flex <em>property</em> (different from the display: flex <em>value</em>), we can set the grow, shrink and basis of a flex item in one line.</p>
+
+            <p>So instead of writing "flex-grow: 1;, flex-shrink: 2;, flex-basis: 50px;", we can write "flex: 1 2 50px;"</p>
+        </div>
+
+    </div>
+
     
 </body>
