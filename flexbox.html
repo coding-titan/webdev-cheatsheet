@@ -17,7 +17,7 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="blocks.html">Position & Display</a>
+        <a href="position-and-display.html">Position & Display</a>
         <a href="flexbox.html" id="current-page">Flexbox</a>
         <a href="fonts.html">Fonts</a>
         <a href="glossary.html">Glossary</a>
@@ -25,37 +25,53 @@
 
     <section class="container">
         <h1>Responsive positioning of elements.</h1>
-        <p>Flexboxes are a way to organize your elements. If you make an element a Flexbox, the items within it (the flex items) will start behaving according to a set of rules that you define.</p>
+        <p>Flexboxes are a way to organize the elements within a container. If you make an element (like a div) a Flexbox, the items within it (the "flex items") will start behaving according to a set of rules that you define. These rules can be set both for the flex container and the flex items.</p>
 
         <br>
         
-        <div class="block">
-            <h3>Justify-content</h3><span class="material-symbols-outlined box-symbol">
-                swap_horiz</span>
-            <p>The Justify-content property is used to align a flex item on the horizontal axis. 5 common values are:</p>
+        <div id="flex-container-properties">
+            <h2>Flex Container</h2>
+            <div class="block">
+                <span class="material-symbols-outlined box-symbol">
+                    swap_horiz</span><h3>Justify-content</h3>
+                <p>The Justify-content property is used to align a flex item on the horizontal axis. 5 common values are:</p>
 
-            <ol>
-                <li>Flex-start: aligns items to the <b>left</b>.</li>
-                <li>Flex-end: aligns items to the <b>right</b>.</li>
-                <li>Center: aligns item to the <b>middle</b>.</li>
-                <li>Space-around: adds an equal amount of <b>space around all items</b>, resulting in a larger amount of whitespace than...</li>
-                <li>Space-between: adds <b>space between the items</b>, but not around them.</li>
-            </ol>
+                <ol>
+                    <li>Flex-start: aligns items to the <b>left</b>.</li>
+                    <li>Flex-end: aligns items to the <b>right</b>.</li>
+                    <li>Center: aligns item to the <b>middle</b>.</li>
+                    <li>Space-around: adds an equal amount of <b>space around all items</b>, resulting in a larger amount of whitespace than...</li>
+                    <li>Space-between: adds <b>space between the items</b>, but not around them.</li>
+                </ol>
+            </div>
+
+            <div class="block">
+                <span class="material-symbols-outlined box-symbol">
+                    swap_vert</span><h3>Align-items</h3>
+                <p>The align-items property is used to align items on the vertical axis. 5 common values are:</p>
+
+                <ol>
+                    <li>Flex-start: aligns items to the <b>top</b> of the container.</li>
+                    <li>Flex-end: aligns items to the <b>bottom</b> of the container.</li>
+                    <li>Center: aligns item to the <b>center</b> of the container.</li>
+                    <li>Baseline: aligns the bottoms of the elements to match each other.</li>
+                    <li>Stretch: stretches items that do not have a set height (or max height) to the top and bottom of the container.</li>
+                </ol>
+            </div>
         </div>
 
-        <div class="block">
-            <h3>Align-items</h3><span class="material-symbols-outlined">
-                swap_vert
-                </span>
-            <p>The align-items property is used to align items on the vertical axis. 5 common values are:</p>
+        <div id="flex-item-properties">
+            <h2>Flex Item</h2>
+            <div class="block">
+                <span class="material-symbols-outlined box-symbol">
+                    zoom_out_map</span><h3>Flex-grow</h3>
+                <p>By default, flex items become smaller to adapt to the size of the container. Flex-grow is used to make them grow as well.</p>
+                
+                <p>We do this using numbers. For example, if I give one flex-item the flex-grow value of 1 and another the flex-grow value of 2, the second item will grow more as the container grows.</p>
 
-            <ol>
-                <li>Flex-start: aligns items to the <b>top</b> of the container.</li>
-                <li>Flex-end: aligns items to the <b>bottom</b> of the container.</li>
-                <li>Center: aligns item to the <b>center</b> of the container.</li>
-                <li>Baseline: aligns the bottoms of the elements to match each other.</li>
-                <li>Stretch: stretches items that do not have a set height (or max height) to the top and bottom of the container.</li>
-            </ol>
+                <p>Additionally, if I set a flex-grow value for one element in a container but not the others, only that item will stretch to fit the container. This is because the default value of flex-grow is 0.</p>
+            </div>
+
         </div>
 
     </section>

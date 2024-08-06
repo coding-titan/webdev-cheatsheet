@@ -68,6 +68,7 @@ p, li, ul, ol {
     padding: 10px;
     color: #283618;
     margin: 5px 26px;
+    line-height: 150%;
 }
 
 .container {
@@ -95,6 +96,7 @@ p, li, ul, ol {
 .box-symbol {
     position: relative;
     top: 3px;
+    left: 40px;
 }
 
 .green-text {
