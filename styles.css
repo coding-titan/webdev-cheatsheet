@@ -137,7 +137,7 @@ th {
     opacity: 0.5;
 }
 
-#code {
+code {
     font-family: monospace;
     font-weight: bold;
 }

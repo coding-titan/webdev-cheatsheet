@@ -27,14 +27,23 @@
     <p>Think about positioning as how to <em>move</em> or <em>place</em> elements on the webpage.</p>
     <div id="position" class="container">
 
+        <div class="block" id="static">
+            <h3>Static (default)</h3>
+            <p>This is the default, where your element simply follows the HTML flow, rendering elements one after the other. </p>
+            <p>These elements cannot have  their position shifted like many of the others below (using for example <code>'top: 0px'</code> won't work).</p>
+            <p>Static elements do not participate in the stacking context created by z-index. They can, however, still overlap due to margins or other layout factors.</p>
+        </div>
+        
         <div class="block" id="relative">
             <h3>Relative</h3>
-            <p>These are shifted in relation to their original position. Confusingly enough, this is written in the opposite; if I want to move it 10px down, I write <span class="code">'10px top'</span>. The idea is that you move it a certain distance <em>from</em> something. This means that if you want something to moved upwards 10px, you would write <span id="code">'bottom: 0px'</span>.</p>
+            <p>These are shifted in relation to their original position. Confusingly enough, this is written in the opposite; if I want to move it 10px down, I write <span class="code">'10px top'</span>. The idea is that you move it a certain distance <em>from</em> something. This means that if you want something to moved upwards 10px, you would write <code>'bottom: 0px'</code>.</p>
         </div>
 
         <div class="block" id="absolute">
             <h3>Absolute</h3>
-            <p>These are shifted in relation to their parent element. You sort of "force" it to move in a certain way. It stays that way even if you scroll, which is a difference from "fixed".</p>
+            <p>These are shifted in relation to their nearest parent element that does not have the default position of Static, usually something with Relative (or if nothing else is available, the html element/or the viewport).</p>
+            <p>You can sort of "force" it to move in a certain way. It stays that way even if you scroll, which is a difference from "fixed".</p>
+            <p>In order for absolute to work, the parent element must be relative or </p>
         </div>
 
         <div class="block" id="fixed">
@@ -51,7 +60,7 @@
 
 
     <h2>Display</h2>
-        <p>These are the display properties we have to choose from.</p>
+        <p>Here are a number of display properties we have to choose from.</p>
         <p>Think about this more like how you instruct the browser to deal with the placement of the content, not least when different sized browsers come into play.</p>
 
     <div id="display" class="container">
@@ -71,8 +80,13 @@
             <p>These are a middle ground. They are like inline in that they can appear next to other elements and don't create a whole new row for themselves, but like blocks in that they can have a set width & height that they occupy.</p>
         </div>
 
+        <div class="block" id="flexbox">
+            <h3>Flexbox</h3>
+            <p>Flexbox is a very flexible (shocker) way of instructing the browser, where you manually set a bunch of different properties. These have their own page above.</p>
+        </div>
+
         <table id="display-table">
-            <caption>Display Summary:</caption>
+            <caption>Summary:</caption>
             <tr>
                 <th>Display property</th>
                 <th>Does it create a new row?</th>
@@ -92,6 +106,11 @@
                 <td>Inline-block</td>
                 <td>No</td>
                 <td>Yes, height + width</td>
+            </tr>
+            <tr>
+                <td>Flexbox</td>
+                <td>It depends</td>
+                <td>Yes</td>
             </tr>
         </table>
     </div>
